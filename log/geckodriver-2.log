@@ -1,0 +1,24 @@
+1673928212692	geckodriver	INFO	Listening on 127.0.0.1:54959
+1673928215763	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54960" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\40032116\\AppData\\Local\\Temp\\rust_mozprofileBbsYEg"
+1673928216383	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\40032116\\AppData\\Local\\Temp\\rust_mozprofileBbsYEg\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54960/devtools/browser/6ae9689a-06d8-44d4-8c21-67c45fc038db
+1673928218893	Marionette	INFO	Listening on port 54984
+Read port: 54984
+1673928219018	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.db4free.net"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.db4free.net"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.db4free.net"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.db4free.net"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1673928231344	Marionette	INFO	Stopped listening on port 54984
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  CrashMonitor: Writing notifications to file after receiving profile-before-change and awaiting all checkpoints written
+          Phase: IOUtils: waiting for profileBeforeChange IO to complete
+          State: {"profile-after-change":true,"final-ui-startup":true,"sessionstore-windows-restored":true,"quit-application-granted":true,"quit-application":true,"sessionstore-final-state-write-complete":true,"profile-change-net-teardown":true,"profile-change-teardown":true,"profile-before-change":true}
+WARNING: OperationError: Could not move temporary file(C:\Users\40032116\AppData\Local\Temp\rust_mozprofileBbsYEg\sessionCheckpoints.json.tmp) to destination(C:\Users\40032116\AppData\Local\Temp\rust_mozprofileBbsYEg\sessionCheckpoints.json)
+WARNING: observe@resource://gre/modules/AsyncShutdown.jsm:575:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: OperationError: Could not move temporary file(C:\Users\40032116\AppData\Local\Temp\rust_mozprofileBbsYEg\sessionCheckpoints.json.tmp) to destination(C:\Users\40032116\AppData\Local\Temp\rust_mozprofileBbsYEg\sessionCheckpoints.json)

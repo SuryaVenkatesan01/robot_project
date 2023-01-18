@@ -1,0 +1,19 @@
+1673928455380	geckodriver	INFO	Listening on 127.0.0.1:57065
+1673928458436	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57066" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\40032116\\AppData\\Local\\Temp\\rust_mozprofileu5NpSa"
+1673928459057	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\40032116\\AppData\\Local\\Temp\\rust_mozprofileu5NpSa\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57066/devtools/browser/430623f2-73e1-4806-9559-a8c99b808d0f
+1673928461460	Marionette	INFO	Listening on port 57088
+Read port: 57088
+1673928461579	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.db4free.net"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.db4free.net"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.db4free.net"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.db4free.net"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1673928476342	Marionette	INFO	Stopped listening on port 57088
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+

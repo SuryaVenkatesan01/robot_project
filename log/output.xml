@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.4 on win32)" generated="20230118 15:50:14.157" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo11 Advance" source="C:\robot_project\selenium_suite\demo11_advance.robot">
+<test id="s1-t1" name="TC2" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230118 15:50:14.571" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230118 15:50:14.571" endtime="20230118 15:50:17.809"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230118 15:50:17.810" endtime="20230118 15:50:17.937"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230118 15:50:17.937" endtime="20230118 15:50:17.941"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=http:/facebook.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230118 15:50:17.942" level="INFO">Opening url 'http:/facebook.com/'</msg>
+<status status="PASS" starttime="20230118 15:50:17.942" endtime="20230118 15:50:21.162"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css=#email</arg>
+<arg>jack</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230118 15:50:21.163" level="INFO">Typing text 'jack' into text field 'css=#email'.</msg>
+<status status="PASS" starttime="20230118 15:50:21.162" endtime="20230118 15:50:21.282"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>css=#pass</arg>
+<arg>pass123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230118 15:50:21.283" level="INFO">Typing password into text field 'css=#pass'.</msg>
+<msg timestamp="20230118 15:50:21.328" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230118 15:50:21.410" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230118 15:50:21.282" endtime="20230118 15:50:21.410"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=button[name='login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230118 15:50:21.411" level="INFO">Clicking element 'css=button[name='login']'.</msg>
+<status status="PASS" starttime="20230118 15:50:21.411" endtime="20230118 15:50:21.478"/>
+</kw>
+<status status="PASS" starttime="20230118 15:50:14.570" endtime="20230118 15:50:21.478"/>
+</test>
+<status status="PASS" starttime="20230118 15:50:14.161" endtime="20230118 15:50:21.481"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo11 Advance">Demo11 Advance</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
