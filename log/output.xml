@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.10.4 on win32)" generated="20230119 11:15:00.787" rpa="false" schemaversion="3">
-<suite id="s1" name="Demo11 Advance" source="C:\robot_project\selenium_suite\demo11_advance.robot">
-<test id="s1-t1" name="TC3" line="21">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>browser=chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230119 11:15:01.087" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20230119 11:15:01.087" endtime="20230119 11:15:03.072"/>
+<robot generator="Robot 6.0.2 (Python 3.10.4 on win32)" generated="20230119 14:16:35.984" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo3" source="C:\robot_project\robot_suite\demo3.robot">
+<test id="s1-t1" name="TC10" line="58">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>&amp;{emp_dict}</var>
+<arg>emp_id=202</arg>
+<arg>emp_name=Surya</arg>
+<arg>role=AE</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230119 14:16:36.037" level="INFO">&amp;{emp_dict} = { emp_id=202 | emp_name=Surya | role=AE }</msg>
+<status status="PASS" starttime="20230119 14:16:36.037" endtime="20230119 14:16:36.048"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230119 11:15:03.072" endtime="20230119 11:15:03.203"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${emp_dict}[emp_id]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230119 14:16:36.049" endtime="20230119 14:16:36.049"/>
 </kw>
-<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
-<arg>10s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20230119 11:15:03.203" endtime="20230119 11:15:03.206"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>url=https://redbus.in</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230119 11:15:03.207" level="INFO">Opening url 'https://redbus.in'</msg>
-<status status="PASS" starttime="20230119 11:15:03.207" endtime="20230119 11:15:27.341"/>
-</kw>
-<status status="PASS" starttime="20230119 11:15:01.072" endtime="20230119 11:15:27.341"/>
+<status status="PASS" starttime="20230119 14:16:36.037" endtime="20230119 14:16:36.050"/>
 </test>
-<status status="PASS" starttime="20230119 11:15:00.791" endtime="20230119 11:15:27.341"/>
+<status status="PASS" starttime="20230119 14:16:35.993" endtime="20230119 14:16:36.051"/>
 </suite>
 <statistics>
 <total>
@@ -34,7 +27,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demo11 Advance">Demo11 Advance</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo3">Demo3</stat>
 </suite>
 </statistics>
 <errors>
