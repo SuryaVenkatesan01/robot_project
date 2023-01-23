@@ -41,5 +41,29 @@ TC1
     Clear Text  android=UiSelector().resourceId("android:id/numberpicker_input").instance(2)
     Wait Until Page Contains Element  android=UiSelector().resourceId("android:id/numberpicker_input").instance(2)
     Input Text   android=UiSelector().resourceId("android:id/numberpicker_input").instance(2)  2001
-
     Close Application
+
+TC2 Swipe UiSelector
+    Open Application   remote_url=http://localhost:4723/wd/hub
+    ...   platformName=android
+    ...   deviceName=oneplus
+    ...   appPackage=org.khanacademy.android
+    ...   appActivity=org.khanacademy.android.ui.library.MainActivity
+    ...   noReset=true
+    Set Appium Timeout    20s
+    Run Keyword And Ignore Error    Wait Until Page Contains Element  xpath=//*[@text='Dismiss']
+    Run Keyword And Ignore Error    Click Element    xpath=//*[@text='Dismiss']
+    Wait Until Page Contains Element   xpath=//android.widget.Button[@text='Search']
+    Click Element    xpath=//android.widget.Button[@text='Search']
+    Wait Until Page Contains Element   xpath=//android.widget.TextView[@text='Arts and humanities']
+    Click Element      xpath=//android.widget.TextView[@text='Arts and humanities']
+    &{dic_arg}      Create Dictionary      strategy=android uiautomator
+    ...   selector=UiSelector().text("Art of Asia")
+    Execute Script    mobile: scroll    &{dic_arg}
+    Click Element       android=UiSelector().text("Art of Asia")
+    &{dic_arg}      Create Dictionary      strategy=android uiautomator
+    ...   selector=UiSelector().text("South Asia")
+    Execute Script    mobile: scroll    &{dic_arg}
+    Click Element    android=UiSelector().text("South Asia")
+    Sleep    10s
+    [Teardown]  Close Application
