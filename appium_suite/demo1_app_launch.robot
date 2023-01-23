@@ -35,3 +35,12 @@ TC2
     Log      ${page_source}
     Sleep    15s
     Close Application
+
+TC3
+    Open Application   remote_url=http://localhost:4723/wd/hub
+    ...   platformName=android
+    ...   deviceName=oneplus
+    ...   appPackage=org.khanacademy.android
+    ...   appActivity=org.khanacademy.android.ui.library.MainActivity
+    ...   noReset=true
+

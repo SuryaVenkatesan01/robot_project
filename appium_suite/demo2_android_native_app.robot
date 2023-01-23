@@ -50,5 +50,5 @@ TC1 Sign up
     Input Text    xpath=//android.widget.EditText[@text='Password']  welcome123
     Wait Until Page Contains Element  xpath=//android.widget.TextView[@text='CREATE']
     Click Element  xpath=//android.widget.TextView[@text='CREATE']
-    Sleep    30s
+    Sleep    5s
     Close Application
