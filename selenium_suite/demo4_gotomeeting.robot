@@ -11,4 +11,6 @@ TC1
     Input Text    id=first-name   John
     Input Text    id=last-name    wick
     Input Text    id=login__email    john@gmail.com
-    Input Text    id=CompanySize    10 - 99
+    Select From List By Label    id=CompanySize    10 - 99
+    Sleep    5s
+    Close Browser

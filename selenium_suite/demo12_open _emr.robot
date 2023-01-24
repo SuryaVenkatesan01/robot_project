@@ -26,7 +26,7 @@ TC1
     Unselect Frame
     Select Frame   xpath=//iframe[@id='modalframe']
     Click Element   xpath=//input[@value='Confirm Create New Patient']
-    ${alert_text}  Handle Alert    action=ACCEPT    timeout=20s
+    ${alert_text}  Handle Alert    action=ACCEPT    timeout=30s
     Log To Console    ${alert_text}
     Unselect Frame
     Click Element    class=closeDlgIframe

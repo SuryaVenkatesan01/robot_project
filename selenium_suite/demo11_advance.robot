@@ -23,6 +23,10 @@ TC3
     Maximize Browser Window
     Set Browser Implicit Wait    10s
     Go To    url=https://redbus.in
+    Click Element   id=src
+    Input Text   id=src    Vadodara
+    Click Element   xpath=//li[text()='Central Bus Station, Vadodara']
+    Click Element   id=dest
 
 
 
