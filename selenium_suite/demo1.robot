@@ -31,3 +31,12 @@ TC5
     Input Password      id=input_password    welcome123
     Click Element    id=input_go
 
+TC6
+    Open Browser    browser=chrome
+    @{output}   Run Keyword And Ignore Error        Click Element    xpath=//a
+    Log To Console    ${output}
+    Log To Console    ${output}[0]
+    Log To Console    ${output}[1]
+    Log     ${output}
+
+
