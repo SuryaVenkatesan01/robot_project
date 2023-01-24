@@ -57,11 +57,11 @@ TC2 Swipe UiSelector
     Click Element    xpath=//android.widget.Button[@text='Search']
     Wait Until Page Contains Element   xpath=//android.widget.TextView[@text='Arts and humanities']
     Click Element      xpath=//android.widget.TextView[@text='Arts and humanities']
-    &{dic_arg}      Create Dictionary      strategy=android uiautomator
+    &{dic_arg}      Create Dictionary      strategy=-android uiautomator
     ...   selector=UiSelector().text("Art of Asia")
     Execute Script    mobile: scroll    &{dic_arg}
     Click Element       android=UiSelector().text("Art of Asia")
-    &{dic_arg}      Create Dictionary      strategy=android uiautomator
+    &{dic_arg}      Create Dictionary      strategy=-android uiautomator
     ...   selector=UiSelector().text("South Asia")
     Execute Script    mobile: scroll    &{dic_arg}
     Click Element    android=UiSelector().text("South Asia")
